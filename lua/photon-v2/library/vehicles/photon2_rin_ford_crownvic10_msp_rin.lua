@@ -45,6 +45,45 @@ VEHICLE.Equipment = {
 		}
 	},
 	{
+		Category = "ALPR",
+		Options = {
+			{
+				Option = "None",
+			},
+			{
+				Option = "ALPR",
+			    Props = {
+					{
+						Model = "models/anmgenetacautovusharpx/ANMGenetacAutoVuSharpX.mdl",
+						Position = Vector( 32.5, -100, 49.9),
+						Angles = Angle( -1, 235, -6 ),
+						Scale = 1,
+						SubMaterials = {
+							[0] = "rin/lrpd2/props/alpr"
+						},
+						BodyGroups = {
+							["wire"] = 2,
+							["lens cover"] = 1,
+						},
+					},
+					{
+						Model = "models/anmgenetacautovusharpx/ANMGenetacAutoVuSharpX.mdl",
+						Position = Vector( -32.5, -100, 49.9),
+						Angles = Angle( -1, -55, 6 ),
+						Scale = 1,
+						SubMaterials = {
+							[0] = "rin/lrpd2/props/alpr"
+						},
+						BodyGroups = {
+							["wire"] = 0,
+							["lens cover"] = 1,
+						},
+					},
+				}
+			},
+		}
+	},
+	{
 		Category = "Lightbar",
 		Options = {
 			{
@@ -83,31 +122,21 @@ VEHICLE.Equipment = {
 				Option = "Rear Deck",
 				Components = {
 					{
-						Component = "photon_whe_dominator_2",
-						Position = Vector( -17, -80, 50.8 ),
+						Component = "photon_whe_dominator2_mass",
+						Position = Vector( -17, -79, 51.05 ),
 						Angles = Angle( 180, 0, 0 ),
-						Scale = 1.1,
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE3"] = { All = "DOUBLE_FLASH_HOLD" },
-							},
-						},
-                        RenderGroup = RENDERGROUP_OPAQUE,
+						Scale = 1.3,
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 					{
-						Component = "photon_whe_dominator_2",
-						Position = Vector( 17, -80, 50.8 ),
+						Component = "photon_whe_dominator2_mass",
+						Position = Vector( 17, -79, 51.05 ),
 						Angles = Angle( 180, 0, 0 ),
-						Scale = 1.1,
+						Scale = 1.3,
 						States = {
 							[1] = "A",
 						},
-						Inputs = {
-							["Emergency.Warning"] = {
-								["MODE3"] = { All = "DOUBLE_FLASH_HOLD" },
-							},
-						},
-                        RenderGroup = RENDERGROUP_OPAQUE,
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				},
 			},
