@@ -39,7 +39,25 @@ VEHICLE.Equipment = {
 							[2] = "rin/msp/props/edge_msp"
 						},
 					},
-				}
+				},
+				Props = {
+					{
+						Model = "models/sentry/props/whelenadvantedge.mdl",
+						Position = Vector( 0, -16, 59.5 ),
+						Angles = Angle( 0, -90, 0 ),
+						Scale = 1.1,
+						SubMaterials = {
+							[0] = "photon/common/blank",
+							[2] = "photon/common/blank",
+							[3] = "photon/common/blank",
+							[4] = "photon/common/blank",
+							[5] = "photon/common/blank",
+						},
+						BodyGroups = {
+							["Speaker"] = 1,
+						},
+					},
+				},
 			},
 		}
 	},

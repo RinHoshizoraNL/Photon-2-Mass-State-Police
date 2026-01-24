@@ -27,8 +27,35 @@ VEHICLE.Equipment = {
 		}
 	},
 	{
+		Category = "Lighting",
+		Options = {
+			{
+				Option = "Default",
+				Components = {
+					{
+						Component = "photon_standard_sgmcvpi96",
+					}
+				}
+			}
+		}
+	},
+	{
 		Category = "Lightbar",
 		Options = {
+			{
+				Option = "Federal Signal Vista Strobe",
+				Components = {
+					{
+						Component = "photon_fedsig_vista_mass",
+						Position = Vector( 0, -19.5, 72 ),
+						Angles = Angle( 0, 0, 0 ),
+						Scale = 1.003,
+						BodyGroups = {
+							["middle_part"] = 2,
+						},
+					},
+				}
+			},
 			{
 				Option = "Whelen Edge 9000",
 				Components = {
@@ -40,6 +67,105 @@ VEHICLE.Equipment = {
 						SubMaterials = {
 							[2] = "rin/msp/props/edge_msp"
 						}
+					},
+				}
+			},
+			{
+				Option = "Federal Signal Jetstream",
+				Components = {
+					{
+						Component = "photon_fedsig_jetstream_mass",
+						Position = Vector( 0, -18.5, 66 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 1.04,
+						SubMaterials = {
+							[3] = "rin/msp/props/jetstream",
+						},
+					},
+					{
+						Component = "photon_generic_flasher_mass",
+						Position = Vector( -7, -22, 73.2 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 0.5,
+						SubMaterials = {
+							[3] = "sentry/props/koitoflasher/glass",
+						},
+						States = {
+							[1] = "R",
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_generic_flasher_mass",
+						Position = Vector( 7, -22, 73.2 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 0.5,
+						Phase = 180,
+						SubMaterials = {
+							[3] = "sentry/props/koitoflasher/glass_amber",
+						},
+						States = {
+							[1] = "A",
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+				}
+			},
+		}
+	},
+	{
+		Category = "Rear Deck",
+		Options = {
+			{
+				Option = "Generic Strobe Lights",
+				Components = {
+					{
+						Component = "photon_generic_flasher_mass",
+						Position = Vector( -23, -80, 49.6 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 0.8,
+						SubMaterials = {
+							[3] = "sentry/props/koitoflasher/glass_blue",
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_generic_flasher_mass",
+						Position = Vector( -16.1, -80, 49.6 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 0.8,
+						Phase = 180,
+						SubMaterials = {
+							[3] = "sentry/props/koitoflasher/glass",
+						},
+						States = {
+							[1] = "R",
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_generic_flasher_mass",
+						Position = Vector( 23, -80, 49.6 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 0.8,
+						Phase = 180,
+						SubMaterials = {
+							[3] = "sentry/props/koitoflasher/glass_blue",
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
+					},
+					{
+						Component = "photon_generic_flasher_mass",
+						Position = Vector( 16.1, -80, 49.6 ),
+						Angles = Angle( 0, 180, 0 ),
+						Scale = 0.8,
+						SubMaterials = {
+							[3] = "sentry/props/koitoflasher/glass_amber",
+						},
+						States = {
+							[1] = "A",
+						},
+						RenderGroup = RENDERGROUP_OPAQUE,
 					},
 				}
 			},
@@ -93,6 +219,9 @@ VEHICLE.Equipment = {
 						},
 					},
 				}
+			},
+			{
+				Option = "None",
 			},
 		}
 	},
