@@ -1,0 +1,7 @@
+"DecalModulate"
+{
+	"$basetexture" "rin/msp/props/mx7000"
+	"$nocull" "1"
+	"$model" "1"
+}
+
